@@ -12,7 +12,7 @@ const Intro = () => {
   return (
     <section className='mb-28 max-w-[50rem] text-center'>
       <div className="flex items-center justify-center">
-        <div className='relative'>
+        <div className='relative  scroll-mt-96' id='home'>
           <motion.div
             initial={{ opacity: 0, scale: 0}}
             animate={{ opacity: 1, scale: 1}}
@@ -64,13 +64,13 @@ const Intro = () => {
 
         <Link
           href='#contact'
-          className='group bg-[#ffd500] text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform'
+          className='group bg-[#ffd500] text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform'
         >Contact me<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition-transform'/></Link>
 
         <a
           href="https://www.linkedin.com/in/sofia-baezzato"
           target='_blank'
-          className='bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform'
+          className='bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform'
         >
           <BsLinkedin />
         </a>
@@ -78,7 +78,7 @@ const Intro = () => {
         <a
           href="https://github.com/sofiabaezzato"
           target='_blank'
-          className='bg-white p-4 text-gray-600 text-[1.3rem] flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform'
+          className='bg-white p-4 text-gray-600 text-[1.3rem] flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform'
         >
           <FaGithubSquare />
         </a>

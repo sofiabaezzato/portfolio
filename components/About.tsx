@@ -1,23 +1,36 @@
 'use client'
 
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useRef } from 'react'
+import { motion, useScroll } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 
 const About = () => {
+  const element = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: element,
+    offset: ["0 1", "1 0.8"]
+  })
 
   return (
-    <section
-      className='mb-28 max-w-[45rem] text-center'
+    <motion.section
+      className='mb-28 max-w-[45rem] text-center scroll-mt-28'
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      ref={element}
+      style={{
+        opacity: scrollYProgress,
+      }}
+      id='about'
     >
       <SectionHeading>About me</SectionHeading>
-      <motion.p
+      <p
         className='text-xl mb-3 leading-8'
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vel labore commodi et nostrum ex ipsa cupiditate id sunt, dolore facilis unde temporibus hic minima, nobis mollitia aliquam. Commodi, a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vel labore commodi et nostrum ex ipsa cupiditate id sunt, dolore facilis unde temporibus hic minima, nobis mollitia aliquam. Commodi, a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vel labore commodi et nostrum ex ipsa cupiditate id sunt, dolore facilis unde temporibus hic minima, nobis mollitia aliquam. Commodi, a!
-      </motion.p>
+      </p>
 
-    </section>
+    </motion.section>
   )
 }
 
