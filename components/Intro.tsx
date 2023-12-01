@@ -7,12 +7,18 @@ import { motion } from "framer-motion"
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
+import { useSectionInView } from '@/lib/hooks'
 
 const Intro = () => {
+  const { ref } = useSectionInView('Home', 0.5)
+  
   return (
-    <section className='mb-28 max-w-[50rem] text-center'>
+    <section
+      className='mb-28 max-w-[50rem] text-center'
+      ref={ref}
+    >
       <div className="flex items-center justify-center">
-        <div className='relative  scroll-mt-96' id='home'>
+        <div className='relative scroll-mt-96' id='home'>
           <motion.div
             initial={{ opacity: 0, scale: 0}}
             animate={{ opacity: 1, scale: 1}}
