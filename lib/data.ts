@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaJs, FaTypo3, FaGit, FaMonero, FaGitAlt } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import toolboxImg from "@/public/toolbox.png";
 
@@ -80,14 +80,44 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Git",
-  "Tailwind",
-  "Framer Motion",
-  "MongoDB",
+  {
+    name: "HTML",
+    icon: React.createElement(FaHtml5)
+  },
+  {
+    name: "CSS",
+    icon: React.createElement(FaCss3)
+  },
+  {
+    name: "JavaScript",
+    icon: React.createElement(FaJs)
+  },
+  {
+    name: "Typescript",
+    icon: React.createElement(FaReact)
+  },
+  {
+    name: "React",
+    icon: React.createElement(FaReact)
+  },
+  {
+    name: "Next.js",
+    icon: React.createElement(FaReact)
+  },
+  {
+    name: "Git",
+    icon: React.createElement(FaGitAlt)
+  },
+  {
+    name: "Tailwind",
+    icon: React.createElement(FaReact)
+  },
+  {
+    name: "Framer Motion",
+    icon: React.createElement(FaReact)
+  },
+  {
+    name: "MongoDB",
+    icon: React.createElement(FaReact)
+  }
 ] as const;

@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <section
-      className='scroll-mt-28'
+      className='mb-28 scroll-mt-28'
       id='projects'
       ref={ref}
     >
