@@ -8,9 +8,12 @@ import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hooks'
+import { useActiveSectionContext } from '@/context/ActiveSectionContext'
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.5)
+  const { setActiveSection, setTimeLastClick } = useActiveSectionContext()
+
   
   return (
     <section
@@ -70,8 +73,15 @@ const Intro = () => {
 
         <Link
           href='#contact'
-          className='group bg-[#ffd500] text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform'
-        >Contact me<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition-transform'/></Link>
+          className='group bg-[#ffd500] text-gray-600 px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 
+          active:scale-95 transition-transform'
+          onClick={() => {
+            setActiveSection("Contact")
+            setTimeLastClick(Date.now())
+          }}
+        >
+          Contact me<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition-transform'/>
+        </Link>
 
         <a
           href="https://www.linkedin.com/in/sofia-baezzato"

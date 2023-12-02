@@ -52,7 +52,7 @@ const ProjectCard = ({
             href={repoUrl}
             target='_blank'
             className='group/button text-xs font-semibold bg-white text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:border-gray-950 hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform'
-          >Repo<BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/></Link>
+          >Code<BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/></Link>
         </div>  
 
         <p className="mt-2 leading-relaxed text-slate-700">{description}</p>

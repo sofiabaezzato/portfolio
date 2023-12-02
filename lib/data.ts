@@ -1,8 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact, FaHtml5, FaCss3, FaJs, FaTypo3, FaGit, FaMonero, FaGitAlt } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import toolboxImg from "@/public/toolbox.png";
+import tailwindIcon from '@/public/icons/tailwind.svg'
+import nextIcon from '@/public/icons/next.svg'
+import framerIcon from '@/public/icons/framer.svg'
 
 export const links = [
   {
@@ -22,10 +25,6 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
     name: "Contact",
     hash: "#contact",
   },
@@ -33,24 +32,24 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "BSc Aerospace Engineering",
+    location: "Università degli Studi di Padova, Italy",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Videomaker & Motion Designer Freelance",
+    location: "Padua, Italy",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2019 - present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Project Manager Freelance",
+    location: "Padua, Italy",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
@@ -82,42 +81,42 @@ export const projectsData = [
 export const skillsData = [
   {
     name: "HTML",
-    icon: React.createElement(FaHtml5)
+    icon: "html5"
   },
   {
     name: "CSS",
-    icon: React.createElement(FaCss3)
+    icon: "css3"
   },
   {
     name: "JavaScript",
-    icon: React.createElement(FaJs)
+    icon: "javascript"
   },
   {
     name: "Typescript",
-    icon: React.createElement(FaReact)
+    icon: "typescript_badge"
   },
   {
     name: "React",
-    icon: React.createElement(FaReact)
+    icon: "react"
   },
   {
     name: "Next.js",
-    icon: React.createElement(FaReact)
+    icon: nextIcon
   },
   {
     name: "Git",
-    icon: React.createElement(FaGitAlt)
+    icon: "git"
   },
   {
     name: "Tailwind",
-    icon: React.createElement(FaReact)
+    icon: tailwindIcon
   },
   {
     name: "Framer Motion",
-    icon: React.createElement(FaReact)
+    icon: framerIcon
   },
   {
     name: "MongoDB",
-    icon: React.createElement(FaReact)
+    icon: "mongodb"
   }
 ] as const;

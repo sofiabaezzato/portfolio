@@ -5,6 +5,8 @@ import SectionHeading from './SectionHeading'
 import { skillsData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
+import DevIcon from 'devicon-react-svg'
+import Image from 'next/image'
 
 const fadeInAnimationVariants = {
   initial: {
@@ -27,8 +29,9 @@ const Skills = () => {
     <section
       className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
       ref={ref}
+      id='skills'
     >
-      <SectionHeading>My Skills</SectionHeading>
+      <SectionHeading>My Toolbox</SectionHeading>
       <ul
         className='flex flex-wrap justify-center gap-2 text-md text-gray-800'
       >
@@ -44,7 +47,8 @@ const Skills = () => {
             }}
             custom={index}
           >
-            {skill.icon}
+            {skill.name === "Tailwind" || skill.name === "Next.js" || skill.name === "Framer Motion" ? <Image src={skill.icon} alt='dev-icon' width={20} height={20} className='text-gray-600'/> :
+            <DevIcon icon={skill.icon} className='text-gray-600' width={20} height={20}/>}
             {skill.name}
           </motion.li>
         ))}
