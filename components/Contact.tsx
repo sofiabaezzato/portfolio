@@ -30,10 +30,10 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className='text-gray-700 -mt-6'>Feel free to contact me through this form.</p>
+      <p className='text-gray-700 -mt-6 dark:text-slate-300'>Feel free to contact me through this form.</p>
 
       <form
-        className='flex flex-col gap-1 mt-10'
+        className='flex flex-col gap-1 mt-10 '
         action={async (FormData) => {
           const { data, error } = await sendEmail(FormData)
 
@@ -48,14 +48,14 @@ const Contact = () => {
         <input
           name='email'
           type="email"
-          className='h-14 rounded-lg border border-black/5 p-4'
+          className='h-14 rounded-lg border border-black/5 p-4 dark:bg-white dark:bg-opacity-10 dark:placeholder:text-gray-500'
           placeholder='Your email'
           maxLength={200}
           required
         />
         <textarea
           name='message'
-          className='h-52 my-3 rounded-lg border border-black/5 p-4'
+          className='h-52 my-3 rounded-lg border border-black/5 p-4 dark:bg-white dark:bg-opacity-10 dark:placeholder:text-gray-500'
           placeholder='Your message'
           maxLength={5000}
           required

@@ -14,12 +14,12 @@ const SubmitButton = () => {
   return (
     <button
       type='submit'
-      className='group h-[3rem] w-[8rem] bg-[#ffd500] text-gray-600 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform disabled:scale-100 disabled:bg-opacity-50'
+      className='group h-[3rem] w-[8rem] font-medium bg-[#ffd500] text-gray-800 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform disabled:scale-100 disabled:bg-opacity-50'
       disabled={pending}
     >
       {pending ? <div className='h-5 w-5 animate-spin rounded-full border-b-2 border-white'></div> : (
           <>
-            Submit <FaPaperPlane className="opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            Submit <FaPaperPlane className="opacity-80 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </>
         )}
     </button>

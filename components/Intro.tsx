@@ -86,7 +86,7 @@ const Intro = () => {
         <a
           href="https://www.linkedin.com/in/sofia-baezzato"
           target='_blank'
-          className='bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform'
+          className='bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform dark:bg-white/10 dark:text-gray-300 dark:hover:text-white'
         >
           <BsLinkedin />
         </a>
@@ -94,7 +94,7 @@ const Intro = () => {
         <a
           href="https://github.com/sofiabaezzato"
           target='_blank'
-          className='bg-white p-4 text-gray-600 text-[1.3rem] flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform'
+          className='bg-white p-4 text-gray-600 text-[1.3rem] flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform dark:bg-white/10 dark:text-gray-300 dark:hover:text-white'
         >
           <FaGithubSquare />
         </a>

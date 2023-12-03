@@ -26,7 +26,7 @@ const ProjectCard = ({
 
   return (
     <motion.section
-      className='group bg-slate-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative mb:3 sm:mb-6 last:mb-0 rounded-2xl'
+      className='group bg-slate-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative mb:3 sm:mb-6 last:mb-0 rounded-2xl dark:bg-opacity-10'
       ref={element}
       style={{
         scale: scaleProgress,
@@ -37,7 +37,7 @@ const ProjectCard = ({
         className='py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%]'
       >
         <h3
-          className='text-2xl font-semibold'
+          className='text-2xl font-semibold dark:text-slate-200'
         >{title}</h3>
 
         <div
@@ -55,7 +55,7 @@ const ProjectCard = ({
           >Code<BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/></Link>
         </div>  
 
-        <p className="mt-2 leading-relaxed text-slate-700">{description}</p>
+        <p className="mt-2 leading-relaxed text-slate-700 dark:text-slate-200">{description}</p>
 
        
 
