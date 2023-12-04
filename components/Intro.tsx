@@ -59,7 +59,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0}}
       >
-        <span className='font-bold'>Hi, Sofia here!</span> I'm a frontend enthusiast diving into the world of full-stack JavaScript. <span className="font-bold">My focus?</span> Crafting magic with <span className="underline">React (Next.js)</span>
+        <span className='font-bold'>Hi, Sofia here!</span> I&apos;m a frontend enthusiast diving into the world of full-stack JavaScript. <span className="font-bold">My focus?</span> Crafting magic with <span className="underline">React (Next.js)</span>
       </motion.h1>
 
       <motion.div

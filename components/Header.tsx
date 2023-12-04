@@ -11,9 +11,9 @@ const Header = () => {
   const { activeSection, setActiveSection, setTimeLastClick } = useActiveSectionContext()
 
   return (
-    <header className='z-[999] relative'>
+    <header className='z-[999] relative select-none'>
       <motion.div
-        className='fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg shadow-black/[0.05] backdrop-blur-[0.5rem] sm:h-[3.25rem] dark:bg-gray-900 dark:bg-opacity-70 dark:border-none'
+        className='fixed top-0 left-1/2 -translate-x-1/2 h-[3.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg shadow-black/[0.05] backdrop-blur-[0.5rem] sm:h-[3.25rem] dark:bg-gray-900 dark:bg-opacity-70 dark:border-none'
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >

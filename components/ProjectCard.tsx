@@ -26,7 +26,7 @@ const ProjectCard = ({
 
   return (
     <motion.section
-      className='group bg-slate-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative mb:3 sm:mb-6 last:mb-0 rounded-2xl dark:bg-opacity-10'
+      className='group bg-slate-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative mb-3 sm:mb-6 last:mb-0 rounded-2xl dark:bg-opacity-10'
       ref={element}
       style={{
         scale: scaleProgress,
@@ -55,9 +55,9 @@ const ProjectCard = ({
           >Code<BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/></Link>
         </div>  
 
-        <p className="mt-2 leading-relaxed text-slate-700 dark:text-slate-200">{description}</p>
-
-       
+        <p className="mt-2 leading-relaxed text-slate-700 dark:text-slate-200 text-xs sm:text-sm">
+          {description}
+        </p>
 
         <ul
           className='flex flex-wrap mt-4 gap-2'
@@ -78,7 +78,7 @@ const ProjectCard = ({
       <Image
         src={imageUrl}
         alt={title}
-        className='absolute top-20 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-110 transition-transform'
+        className='top-20 -right-60 w-[28.25rem] sm:-right-40 rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-110 transition-transform sm:absolute'
       />
     </motion.section>
   )

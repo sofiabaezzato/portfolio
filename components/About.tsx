@@ -8,23 +8,28 @@ import { useSectionInView } from '@/lib/hooks'
 const About = () => {
   const element = useRef(null)
 
-  const { scrollYProgress } = useScroll({
+  /* const { scrollYProgress } = useScroll({
     target:element,
     offset: ["0 1", "1 1"]
-  })
-
+  }) */
   const { ref } = useSectionInView('About')
 
   return (
     <motion.section
       className='mb-28 max-w-[45rem] text-center scroll-mt-28'
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
+      // initial={{ opacity: 0, y: 100 }}
+      // animate={{ opacity: 1, y: 0 }}
       ref={element}
-      style={{
+      /* style={{
         opacity: scrollYProgress,
-      }}
+      }} */
       id='about'
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 1}}
+      viewport={{
+        amount: 0.5
+      }}
     >
       <SectionHeading>About me</SectionHeading>
       <p
