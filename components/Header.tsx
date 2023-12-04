@@ -21,7 +21,7 @@ const Header = () => {
 
       <nav className='fixed flex top-[0.15rem] left-1/2 h-12 -translate-x-1/2 sm:h-[initial] sm:py-0'>
         <ul
-          className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 dark:text-gray-400'
+          className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-12 dark:text-gray-400'
         >
           {links.map((link) => (
             <motion.li
@@ -52,7 +52,7 @@ const Header = () => {
                   transition={{
                     type: 'spring',
                     stiffness: 600,
-                    damping: 35
+                    damping: 25
                   }}
                 ></motion.span>
                 : null

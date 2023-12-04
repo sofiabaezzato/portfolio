@@ -6,12 +6,11 @@ import { BsMoon, BsSun } from 'react-icons/bs'
 type Theme = "light" | "dark";
 
 const ThemeSwitch = () => {
-  const [theme, setTheme] = useState<Theme>("light")
+  const [theme, setTheme] = useState<Theme>("dark")
 
   useEffect(() => {
-    const currentTheme = window.localStorage.getItem("theme") as Theme | null
-    if (currentTheme) setTheme(currentTheme)
-    else if (window.matchMedia("prefers-color-scheme: dark").matches) setTheme("dark")
+    const savedTheme = window.localStorage.getItem("theme") as Theme | null
+    if (savedTheme) setTheme(savedTheme)
   }, [])
 
   const toggleTheme = () => {
