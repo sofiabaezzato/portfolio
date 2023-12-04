@@ -26,7 +26,7 @@ const ProjectCard = ({
 
   return (
     <motion.section
-      className='group bg-slate-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative mb-3 sm:mb-6 last:mb-0 rounded-2xl dark:bg-opacity-10'
+      className='group bg-slate-100/10 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative mb-3 sm:mb-6 last:mb-0 rounded-2xl'
       ref={element}
       style={{
         scale: scaleProgress,
