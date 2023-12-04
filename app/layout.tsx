@@ -7,6 +7,7 @@ import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import Background from '@/components/Background'
+import ThemeContextProvider from '@/context/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,17 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en" className='!scroll-smooth'>
       <body className={`${inter.className} bg-slate-50 text-gray-900 relative pt-28 sm:pt-28 dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90 bg-[url(../public/grain.svg)] bg-repeat`}>
-        <Background />
-        
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
+        <ThemeContextProvider>
+          <Background />
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
 
-          <Toaster position='bottom-right'/>
-          <ThemeSwitch />
-          <Footer />
-        </ActiveSectionContextProvider>
-         
+            <Toaster position='bottom-right'/>
+            <ThemeSwitch />
+            <Footer />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   )

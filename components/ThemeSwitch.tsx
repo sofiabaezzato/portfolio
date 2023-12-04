@@ -1,32 +1,12 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { BsMoon, BsSun } from 'react-icons/bs'
-
-type Theme = "light" | "dark";
+import {useTheme} from '@/context/ThemeContext';
 
 const ThemeSwitch = () => {
-  const [theme, setTheme] = useState<Theme>("dark")
-  const [rotate, setRotate] = useState(false)
-
-  useEffect(() => {
-    const savedTheme = window.localStorage.getItem("theme") as Theme | null
-    if (savedTheme) setTheme(savedTheme)
-  }, [])
-
-  const toggleTheme = () => {
-    setRotate(!rotate)
-    if (theme === "light") {
-      setTheme("dark")
-      window.localStorage.setItem("theme", "dark")
-      document.documentElement.classList.add("dark")
-    } else {
-      setTheme("light")
-      window.localStorage.setItem("theme", "light")
-      document.documentElement.classList.remove("dark")
-    }
-  }
+  const { darkTheme, toggleTheme } = useTheme()
 
   return (
     <button
@@ -34,9 +14,9 @@ const ThemeSwitch = () => {
       onClick={toggleTheme}
     >
       <motion.div
-      animate={{rotate: rotate ? -100 : 0}}
+      animate={{rotate: darkTheme ? -100 : 0}}
       transition={{duration: 1.5}}
-      >{theme === "light" ? <BsMoon /> : <BsSun />}</motion.div>
+      >{darkTheme ? <BsSun /> : <BsMoon />}</motion.div>
     </button>
   )
 }
