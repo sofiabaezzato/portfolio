@@ -30,7 +30,18 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className='text-gray-700 -mt-6 dark:text-slate-300'>Feel free to contact me through this form.</p>
+      <motion.p
+        className='text-gray-700 -mt-6 dark:text-slate-300'
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{
+          amount: 0.5,
+          once: true
+        }}
+        transition={{
+          delay: 0.3
+        }}
+      >Feel free to contact me through this form.</motion.p>
 
       <form
         className='flex flex-col gap-1 mt-10 '
