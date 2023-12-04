@@ -12,7 +12,7 @@ import ThemeContextProvider from '@/context/ThemeContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sofia | Developer',
+  title: 'Hi! Sofia here👋',
   description: 'Sofia is a developer with no experience (yet)',
 }
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='!scroll-smooth'>
-      <body className={`${inter.className} bg-slate-50 text-gray-900 relative pt-28 sm:pt-28 dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90 bg-[url(../public/grain.svg)] bg-repeat`}>
+      <body className={`${inter.className} bg-slate-50 text-gray-900 relative pt-28 sm:pt-28 dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90 bg-[url(../public/grainLight.svg)] dark:bg-[url(../public/grainDark.svg)] bg-repeat`}>
         <ThemeContextProvider>
           <Background />
           <ActiveSectionContextProvider>
