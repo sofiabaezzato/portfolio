@@ -2,7 +2,6 @@ import { experiencesData } from '@/lib/data'
 import { motion } from 'framer-motion'
 import React from 'react'
 import { BsFillCheckSquareFill } from 'react-icons/bs'
-import { FaToolbox } from 'react-icons/fa'
 
 type ExperienceProps = (typeof experiencesData)[number]
 

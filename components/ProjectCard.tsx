@@ -43,11 +43,17 @@ const ProjectCard = ({
         <div
           className='flex gap-2 mt-2 mb-4'
         >
-          <Link
-            href={website}
-            target='-blank'
-            className='group/button text-xs font-semibold bg-[#ffd500] text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform'
-          >Live<BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/></Link>
+          {website === '' ? null : (
+            <Link
+              href={website}
+              target='-blank'
+              className='group/button text-xs font-semibold bg-[#ffd500] text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform'
+            >
+              Live
+              <BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/>
+            </Link>
+          )}
+          
           <Link
             href={repoUrl}
             target='_blank'

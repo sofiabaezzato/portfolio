@@ -1,8 +1,9 @@
 import React from "react";
 import { MdWork } from "react-icons/md";
-import { FaGraduationCap, FaReact } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 import toolboxImg from "@/public/toolbox.png";
 import tailwindIcon from '@/public/icons/tailwind.svg'
+import knightImg from '@/public/knight.png'
 import nextIcon from '@/public/icons/next.svg'
 import framerIcon from '@/public/icons/framer.svg'
 import { BsFillKanbanFill } from "react-icons/bs";
@@ -84,13 +85,13 @@ export const projectsData = [
     repoUrl:"https://github.com/sofiabaezzato/toolbox-app",
   },
   {
-    title: "ToolBox",
+    title: "Knight Travails",
     description:
-      "ToolBox is an open-source Next.js full-stack application designed to serve as a comprehensive database of the most useful tools available on the internet.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: toolboxImg,
-    website:"https://toolbox-app-delta.vercel.app",
-    repoUrl:"https://github.com/sofiabaezzato/toolbox-app",
+      `A solution to a "knight travails" problem - i.e. find the shortest path a knight can take to move between two positions on a chessboard. Implemented using a graph BFS search. I know, nothing fancy but I'm really proud of this one.`,
+    tags: ["JavaScript"],
+    imageUrl: knightImg,
+    website: '',
+    repoUrl:"https://github.com/sofiabaezzato/knight-travails",
   },
 ] as const;
 
