@@ -10,23 +10,26 @@ import MobileHeader from './MobileHeader'
 
 const Header = () => {
   const { activeSection, setActiveSection, setTimeLastClick } = useActiveSectionContext()
-  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth)
+  const [screenWidth, setScreenWidth] = useState<number | null>(null)
 
   const handleWindowSizeChange = () => {
-    setScreenWidth(window.innerWidth)
+    if (typeof window !== 'undefined') setScreenWidth(window.innerWidth)
   }
 
   useEffect(() => {
+    setScreenWidth(window.innerWidth)
     window.addEventListener('resize', handleWindowSizeChange)
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange)
     }
   },[])
 
-  const isMobile = screenWidth <= 768
+  const isMobile = () => {
+    if (screenWidth) return screenWidth <= 768
+  }
 
   return (
-    isMobile ? <MobileHeader /> : (
+    isMobile() ? <MobileHeader /> : (
       <header className='z-[999] relative select-none'>
       <motion.div
         className='fixed top-0 left-1/2 -translate-x-1/2 h-[3.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-50 shadow-lg shadow-black/[0.05] backdrop-blur-[0.5rem] sm:h-[3.25rem] dark:bg-gray-900 dark:bg-opacity-70 dark:border-none'

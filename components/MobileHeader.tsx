@@ -8,7 +8,9 @@ const MobileHeader = () => {
   return (
     <header className='z-[999] relative select-none'>
       {isToggle ? (
-        <div>open</div>
+        <button
+          onClick={() => setIsToggle(!isToggle)}
+        >open</button>
       ) : (
         <button
           onClick={() => setIsToggle(!isToggle)}
