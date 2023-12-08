@@ -46,10 +46,10 @@ const ExperienceCard = ({
         >
           What I did
         </h3>
-      </div> */}
+      </div>
       <p
         className='pt-2 text-xs sm:text-base'
-      >{did}</p>
+      >{did}</p> */}
 
       <div
         className='pt-4 flex gap-2 items-center'
