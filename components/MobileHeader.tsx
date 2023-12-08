@@ -16,9 +16,11 @@ const MobileHeader = () => {
   const menuAnimation = {
     initial: {
       scaleY: 0,
+      opacity: 0
     },
     animate: {
       scaleY: 1,
+      opacity: 1,
       transition: {
         duration: 0.2,
         ease: [0.12, 0, 0.39, 0]
@@ -45,7 +47,7 @@ const MobileHeader = () => {
       <AnimatePresence>
         {isToggle ? (
           <motion.div
-            className="bg-[#ffd500] origin-top w-screen h-screen flex flex-col p-8 text-2xl text-gray-900"
+            className="bg-[#ffd500] origin-top w-screen h-screen flex flex-col p-5 text-2xl text-gray-900 touch-none"
             variants={menuAnimation}
             initial='initial'
             animate='animate'
@@ -90,9 +92,9 @@ const MobileHeader = () => {
             </nav>
           </motion.div>
         ) : (
-          <nav className="flex px-5 py-8 w-full justify-end items-center">
+          <nav className="flex p-5 w-full justify-end items-center">
             <button
-              className='cursor-pointer text-3xl'
+              className='cursor-pointer text-2xl'
               onClick={() => setIsToggle(!isToggle)}
             >
               <RxHamburgerMenu />
