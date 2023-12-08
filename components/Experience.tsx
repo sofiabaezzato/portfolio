@@ -40,7 +40,7 @@ const Experience = () => {
           >
             <div className='flex flex-col items-center justify-center gap-3 min-w-[15rem]'>
               <motion.div className='bg-[#ffd500] pr-3 pb-3 rounded-full'>
-                <BsBackpack3Fill className='text-5xl animate-bounce' />
+                <BsBackpack3Fill className='text-4xl animate-bounce' />
               </motion.div>
               <h2 className="text-2xl font-medium !leading-[1.2] sm:text-4xl text-center">It&apos;s been a long journey.</h2>
             </div>

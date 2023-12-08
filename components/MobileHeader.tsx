@@ -57,6 +57,7 @@ const MobileHeader = () => {
             animate='animate'
           >
             <button
+              aria-label='close menu'
               onClick={() => {
                 setIsToggle(!isToggle)
               }}
@@ -98,6 +99,7 @@ const MobileHeader = () => {
         ) : (
           <nav className="flex p-5 w-full justify-end items-center">
             <button
+              aria-label='open menu'
               className='cursor-pointer text-2xl'
               onClick={() => setIsToggle(!isToggle)}
             >

@@ -1,8 +1,8 @@
 import { experiencesData } from '@/lib/data'
 import { motion } from 'framer-motion'
 import React from 'react'
-import { BsCheckCircleFill, BsFillCheckSquareFill } from 'react-icons/bs'
-import { FaHammer, FaToolbox } from 'react-icons/fa'
+import { BsFillCheckSquareFill } from 'react-icons/bs'
+import { FaToolbox } from 'react-icons/fa'
 
 type ExperienceProps = (typeof experiencesData)[number]
 
@@ -16,8 +16,8 @@ const ExperienceCard = ({
 }: ExperienceProps) => {
   return (
     <div>
-      <motion.div className='bg-[#ffd500] pr-3 pb-3 rounded-full w-14 h-14'>
-        <div className='text-5xl animate-bounce'>{icon}</div>
+      <motion.div className='bg-[#ffd500] pl-1 pb-1 rounded-full w-14 h-14'>
+        <div className='text-4xl animate-bounce'>{icon}</div>
       </motion.div>
       <div
       className='bg-slate-100/10 mt-3 p-6 w-[22rem] sm:w-[42rem] border border-black/5 overflow-hidden sm:p-8 relative mb-3 sm:mb-6 last:mb-0 rounded-2xl'
@@ -34,10 +34,10 @@ const ExperienceCard = ({
       </h3>
       
       <p
-        className='pt-3 text-xs sm:text-sm'
+        className='pt-3 text-xs sm:sm:text-base'
       >{description}</p>
 
-      <div
+      {/* <div
         className='pt-4 flex gap-2 items-center'
       >
         <FaToolbox />
@@ -46,9 +46,9 @@ const ExperienceCard = ({
         >
           What I did
         </h3>
-      </div>
+      </div> */}
       <p
-        className='pt-2 text-xs sm:text-sm'
+        className='pt-2 text-xs sm:text-base'
       >{did}</p>
 
       <div
@@ -62,7 +62,7 @@ const ExperienceCard = ({
         </h3>
       </div>
       <p
-        className='pt-2 text-xs sm:text-sm'
+        className='pt-2 text-xs sm:text-base'
       >
         {learn}
       </p>

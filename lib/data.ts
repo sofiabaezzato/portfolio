@@ -5,6 +5,7 @@ import toolboxImg from "@/public/toolbox.png";
 import tailwindIcon from '@/public/icons/tailwind.svg'
 import nextIcon from '@/public/icons/next.svg'
 import framerIcon from '@/public/icons/framer.svg'
+import { BsFillKanbanFill } from "react-icons/bs";
 
 export const links = [
   {
@@ -38,31 +39,37 @@ export const experiencesData = [
     title: "BSc Aerospace Engineering",
     location: "Università degli Studi di Padova, Italy",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    did: ["one", "two", "three"],
-    learn: ["one", "two", "three", "four"],
+      `Survived the academic jungle, emerged with a degree in a subject I thought was my "life calling" — turns out, it was more like a distant cousin. Mastered abstract thinking, problem solving and resilience.`,
+    /* did: "Studied, prayed, and cried", */
+    learn: "Math, physics and survival skills.",
     icon: React.createElement(FaGraduationCap),
     date: "2019",
   },
   {
     title: "Videomaker & Motion Designer Freelance",
     location: "Padua, Italy",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    did: ["one", "two", "three"],
-    learn: ["one", "two", "three", "four"],
+    description: `
+    After university, I ventured into the world of freelance videomaking and motion design, learning the basics and advanced topics from scratch through YouTube tutorials. Specializing in crafting product commercials, corporate event aftermovies, and explainer videos, my business not only weathered the pandemic storm but thrived, with annual revenue growth ranging from 40 to 70%.`,
+    /* did: `Handling everything from initial quotes and project proposals to scripting, storytelling, filming, and editing.`, */
+    learn: `Working with clients ranging from small businesses to multinational corporations, I honed the skill of understanding their needs and consistently delivering projects that met their requirements. I mastered the art of negotiation, swiftly resolving issues on the fly, ensuring timely and top-notch results.`,
     icon: React.createElement(MdWork),
-    date: "2019 - present",
+    date: "Jan 2019 - present",
   },
   {
-    title: "Project Manager Freelance",
+    title: "UniSMART - Project Manager Freelance",
     location: "Padua, Italy",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    did: ["one", "two", "three"],
-    learn: ["one", "two", "three", "four"],
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      `
+      At UniSMART, the University of Padua's foundation, I played a role in ideating and creating impactful talent engagement initiatives. Organizing a hackathon that engaged around 40 students, I handled the logistical, operational, and communicative aspects of the event. In the past year, I took charge of organizing the Contamination Lab Veneto, a University of Padua initiative fostering collaboration between students and companies in innovative project development. Mentored two innovation projects, achieving third place award twice.
+      `,
+    /* did: `
+      Managing a small team, fostering relationships with companies of various sizes (including multinational corporations) and other stakeholders, supervising communication across social platforms, newsletters, and events. Mentored two innovation projects, achieving third place award twice.
+      `, */
+    learn: `
+      Project management, team management, cultivating connections with diverse-sized companies, developing and overseeing communication, managing innovative projects and eary stage startups.
+    `,
+    icon: React.createElement(BsFillKanbanFill),
+    date: "Mar 2022 - present",
   },
 ] as const;
 
