@@ -10,7 +10,6 @@ const ExperienceCard = ({
   title,
   date,
   description,
-  did,
   learn,
   icon
 }: ExperienceProps) => {
