@@ -40,7 +40,7 @@ const Intro = () => {
           </motion.div>
           
           <motion.span
-            className='absolute -bottom-5 -right-5 text-6xl'
+            className='absolute -bottom-5 -right-5  text-3xl sm:text-6xl'
             initial={{ opacity: 0, scale: 0, rotate: -100}}
             animate={{ opacity: 1, scale: 1, rotate: 0}}
             transition={{
@@ -85,6 +85,7 @@ const Intro = () => {
 
         <a
           href="https://www.linkedin.com/in/sofia-baezzato"
+          aria-label='sofia&apos;s linkedin profile'
           target='_blank'
           className='bg-white p-4 text-gray-600 flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform dark:bg-white/10 dark:text-gray-300 dark:hover:text-white'
         >
@@ -93,6 +94,7 @@ const Intro = () => {
 
         <a
           href="https://github.com/sofiabaezzato"
+          aria-label='sofia&apos;s github'
           target='_blank'
           className='bg-white p-4 text-gray-600 text-[1.3rem] flex items-center gap-2 rounded-full hover:scale-110 hover:text-gray-950 active:scale-95 transition-transform dark:bg-white/10 dark:text-gray-300 dark:hover:text-white'
         >

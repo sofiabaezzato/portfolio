@@ -23,10 +23,13 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p
-        className='text-xl mb-3 leading-8 dark:text-slate-200'
+        className='text-lg sm:text-xl mb-3 sm:leading-8 dark:text-slate-200'
         ref={ref}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vel labore commodi et nostrum ex ipsa cupiditate id sunt, dolore facilis unde temporibus hic minima, nobis mollitia aliquam. Commodi, a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vel labore commodi et nostrum ex ipsa cupiditate id sunt, dolore facilis unde temporibus hic minima, nobis mollitia aliquam. Commodi, a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vel labore commodi et nostrum ex ipsa cupiditate id sunt, dolore facilis unde temporibus hic minima, nobis mollitia aliquam. Commodi, a!
+        As a <span className='underline font-bold'>multipotentialite</span>, I have no “one true calling” the way specialists do. Multipotentialites thrive on learning, exploring, and mastering new skills.
+        Over the past four years, I've worked as a <span className='underline'>freelancer</span>, wearing multiple hats as a <span className='underline font-bold'>videomaker, motion designer, and project manager</span>.
+        Starting in January 2023, I embarked on a journey to become a <span className="font-bold underline">JavaScript developer</span>, enrolling in courses like CS50 from Harvard, The Odin Project, and Full Stack Open.
+        In four words, <span className="underline font-bold">I'm a serial learner</span>.
       </p>
 
     </motion.section>
