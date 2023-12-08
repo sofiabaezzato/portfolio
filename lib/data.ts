@@ -1,7 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { MdWork } from "react-icons/md";
+import { FaGraduationCap, FaReact } from "react-icons/fa";
 import toolboxImg from "@/public/toolbox.png";
 import tailwindIcon from '@/public/icons/tailwind.svg'
 import nextIcon from '@/public/icons/next.svg'
@@ -25,6 +24,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -36,7 +39,9 @@ export const experiencesData = [
     location: "Università degli Studi di Padova, Italy",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+    did: ["one", "two", "three"],
+    learn: ["one", "two", "three", "four"],
+    icon: React.createElement(FaGraduationCap),
     date: "2019",
   },
   {
@@ -44,7 +49,9 @@ export const experiencesData = [
     location: "Padua, Italy",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
+    did: ["one", "two", "three"],
+    learn: ["one", "two", "three", "four"],
+    icon: React.createElement(MdWork),
     date: "2019 - present",
   },
   {
@@ -52,6 +59,8 @@ export const experiencesData = [
     location: "Padua, Italy",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    did: ["one", "two", "three"],
+    learn: ["one", "two", "three", "four"],
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
