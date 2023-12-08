@@ -27,9 +27,9 @@ const About = () => {
         ref={ref}
       >
         As a <span className='underline font-bold'>multipotentialite</span>, I have no “one true calling” the way specialists do. Multipotentialites thrive on learning, exploring, and mastering new skills.
-        Over the past four years, I've worked as a <span className='underline'>freelancer</span>, wearing multiple hats as a <span className='underline font-bold'>videomaker, motion designer, and project manager</span>.
+        Over the past four years, I&apos;ve worked as a <span className='underline'>freelancer</span>, wearing multiple hats as a <span className='underline font-bold'>videomaker, motion designer, and project manager</span>.
         Starting in January 2023, I embarked on a journey to become a <span className="font-bold underline">JavaScript developer</span>, enrolling in courses like CS50 from Harvard, The Odin Project, and Full Stack Open.
-        In four words, <span className="underline font-bold">I'm a serial learner</span>.
+        In four words, <span className="underline font-bold">I&apos;m a serial learner</span>.
       </p>
 
     </motion.section>
