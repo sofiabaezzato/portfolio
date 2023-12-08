@@ -10,11 +10,15 @@ const MobileHeader = () => {
       {isToggle ? (
         <button
           onClick={() => setIsToggle(!isToggle)}
-        >open</button>
+        >
+          opened
+        </button>
       ) : (
         <button
           onClick={() => setIsToggle(!isToggle)}
-        >closed</button>
+        >
+          closed
+        </button>
       )}
     </header>
   )

@@ -34,6 +34,8 @@ const Intro = () => {
               src={profilePic}
               alt='Sofia picture'
               quality='100'
+              height={500}
+              width={500}
               priority={true}
               className='h-[7rem] w-[7rem] rounded-full object-cover shadow-xl border-[0.35rem] border-white'
             />
