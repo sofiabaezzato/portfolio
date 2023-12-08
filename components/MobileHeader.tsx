@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsX } from 'react-icons/bs'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { links } from '@/lib/data'
@@ -12,6 +12,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 const MobileHeader = () => {
   const [isToggle, setIsToggle] = useState(false)
   const { activeSection, setActiveSection, setTimeLastClick } = useActiveSectionContext()
+
+  useEffect(() => {
+    isToggle ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'
+  }, [isToggle])
 
   const menuAnimation = {
     initial: {
@@ -47,21 +51,21 @@ const MobileHeader = () => {
       <AnimatePresence>
         {isToggle ? (
           <motion.div
-            className="bg-[#ffd500] origin-top w-screen h-screen flex flex-col p-5 text-2xl text-gray-900 touch-none"
+            className="bg-[#ffd500] origin-top w-screen h-screen flex flex-col p-5 text-2xl text-gray-900 "
             variants={menuAnimation}
             initial='initial'
             animate='animate'
           >
             <button
-              onClick={() => setIsToggle(!isToggle)}
+              onClick={() => {
+                setIsToggle(!isToggle)
+              }}
               className='self-end'
             >
               <BsX className='text-4xl'/>
             </button>
             <nav className='mt-4 text-center'>
-              <ul className='flex flex-col gap-4'
-                
-              >
+              <ul className='flex flex-col gap-4'>
                 {links.map((link, index) => (
                   <motion.li
                     key={index}
