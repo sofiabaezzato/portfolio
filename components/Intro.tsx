@@ -33,7 +33,7 @@ const Intro = () => {
             <Image
               src={profilePic}
               alt='Sofia picture'
-              quality='100'
+              quality='80'
               height={500}
               width={500}
               priority={true}
