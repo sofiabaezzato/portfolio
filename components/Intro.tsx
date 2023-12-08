@@ -42,7 +42,7 @@ const Intro = () => {
           </motion.div>
           
           <motion.span
-            className='absolute -bottom-5 -right-5  text-3xl sm:text-6xl'
+            className='absolute -bottom-1 -right-1 sm:-bottom-5 sm:-right-5  text-4xl sm:text-6xl'
             initial={{ opacity: 0, scale: 0, rotate: -100}}
             animate={{ opacity: 1, scale: 1, rotate: 0}}
             transition={{
