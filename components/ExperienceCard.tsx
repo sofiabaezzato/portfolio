@@ -58,7 +58,7 @@ const ExperienceCard = ({
         <h3
           className='text-xl font-medium dark:text-slate-200'
         >
-          What I've learned
+          What I&apos;ve learned
         </h3>
       </div>
       <p

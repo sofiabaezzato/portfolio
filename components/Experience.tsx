@@ -42,7 +42,7 @@ const Experience = () => {
               <motion.div className='bg-[#ffd500] pr-3 pb-3 rounded-full'>
                 <BsBackpack3Fill className='text-5xl animate-bounce' />
               </motion.div>
-              <h2 className="text-2xl font-medium !leading-[1.2] sm:text-4xl text-center">It's been a long journey.</h2>
+              <h2 className="text-2xl font-medium !leading-[1.2] sm:text-4xl text-center">It&apos;s been a long journey.</h2>
             </div>
             
             {experiencesData.map((item, index) => (
@@ -52,7 +52,7 @@ const Experience = () => {
               <motion.div className='bg-[#ffd500] pr-3 pb-3 rounded-full'>
                 <BsFillBookmarkFill className='text-3xl animate-bounce' />
               </motion.div>
-              <h2 className="text-2xl font-medium !leading-[1.2] sm:text-4xl text-center min-w-[20rem]">Let's add a new chapter together?</h2>
+              <h2 className="text-2xl font-medium !leading-[1.2] sm:text-4xl text-center min-w-[20rem]">Let&apos;s add a new chapter together?</h2>
             </div>
           </motion.div>
           <motion.div
