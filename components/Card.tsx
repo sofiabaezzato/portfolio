@@ -27,20 +27,18 @@ export const Card = ({gradient, children, id}: CardProps) => {
 
 export const ToolboxCard = ({id}: SingleCardProps) => {
   return (
-    <Card id={id} gradient='from-[#f7f0ff] to-[#c4353a] dark:from-[#f7f0ff]/0 dark:to-[#c4353a]/90'>
+    <Card id={id} gradient='from-[#f7f0ff] to-red-200 dark:from-white/0 dark:to-red-300'>
         <div
           className='flex gap-2 mt-2 mb-4'
         >
-          {projectsData[0].website === '' ? null : (
-            <Link
-              href={projectsData[0].website}
-              target='-blank'
-              className='group/button text-xs font-semibold bg-[#ffd500] text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform z-10'
-            >
-              Live
-              <BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/>
-            </Link>
-          )}
+          <Link
+            href={projectsData[0].website}
+            target='-blank'
+            className='group/button text-xs font-semibold bg-[#ffd500] text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform z-10'
+          >
+            Live
+            <BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/>
+          </Link>
           
           <Link
             href={projectsData[0].repoUrl}
@@ -81,17 +79,6 @@ export const KnightCard = ({id}: SingleCardProps) => {
         <div
           className='flex gap-2 mt-2 mb-4'
         >
-          {projectsData[1].website === '' ? null : (
-            <Link
-              href={projectsData[0].website}
-              target='-blank'
-              className='group/button text-xs font-semibold bg-[#ffd500] text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform z-10'
-            >
-              Live
-              <BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/>
-            </Link>
-          )}
-          
           <Link
             href={projectsData[1].repoUrl}
             target='_blank'
@@ -131,18 +118,7 @@ export const BattleshipCard = ({id}: SingleCardProps) => {
     <Card id={id} gradient='from-[#f7f0ff] to-[#f5e6ad] dark:from-[#f7f0ff]/0 dark:to-[#f5e6ad]'>
         <div
           className='flex gap-2 mt-2 mb-4'
-        >
-          {projectsData[2].website === '' ? null : (
-            <Link
-              href={projectsData[0].website}
-              target='-blank'
-              className='group/button text-xs font-semibold bg-[#ffd500] text-gray-600 px-4 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:bg-[#ffd500] hover:text-gray-950 hover:scale-105 active:scale-95 transition-transform z-10'
-            >
-              Live
-              <BsArrowRight className='opacity-70 group-hover/button:translate-x-1 transition-transform'/>
-            </Link>
-          )}
-          
+        > 
           <Link
             href={projectsData[2].repoUrl}
             target='_blank'
