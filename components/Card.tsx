@@ -27,7 +27,7 @@ export const Card = ({gradient, children, id}: CardProps) => {
 
 export const ToolboxCard = ({id}: SingleCardProps) => {
   return (
-    <Card id={id} gradient='from-[#f7f0ff] to-red-200 dark:from-white/0 dark:to-red-300'>
+    <Card id={id} gradient='from-[#f7f0ff] to-red-200 dark:from-gray-900 dark:to-red-300'>
         <div
           className='flex gap-2 mt-2 mb-4'
         >
@@ -75,7 +75,7 @@ export const ToolboxCard = ({id}: SingleCardProps) => {
 
 export const KnightCard = ({id}: SingleCardProps) => {
   return (
-    <Card id={id} gradient='from-[#f7f0ff] to-[#d3f3f1] dark:from-[#f7f0ff]/0 dark:to-[#d3f3f1]'>
+    <Card id={id} gradient='from-[#f7f0ff] to-[#d3f3f1] dark:from-gray-900 dark:to-[#d3f3f1]'>
         <div
           className='flex gap-2 mt-2 mb-4'
         >
@@ -115,7 +115,7 @@ export const KnightCard = ({id}: SingleCardProps) => {
 
 export const BattleshipCard = ({id}: SingleCardProps) => {
   return (
-    <Card id={id} gradient='from-[#f7f0ff] to-[#f5e6ad] dark:from-[#f7f0ff]/0 dark:to-[#f5e6ad]'>
+    <Card id={id} gradient='from-[#f7f0ff] to-[#f5e6ad] dark:from-gray-900 dark:to-[#f5e6ad]'>
         <div
           className='flex gap-2 mt-2 mb-4'
         > 
