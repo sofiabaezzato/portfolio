@@ -11,7 +11,7 @@ const Projects = () => {
   const { ref } = useSectionInView('Projects', 0.5)
 
   return (
-    <section className='w-full sm:max-w-[53rem]' ref={ref}>
+    <section className='w-full sm:max-w-[53rem]' ref={ref} id='projects'>
       <SectionHeading>Projects</SectionHeading>
       <div className="flex w-full gap-10 sm:gap-20 items-start my-48">
         <div className="w-full py-[30vh]">
