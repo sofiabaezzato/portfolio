@@ -4,9 +4,11 @@ import { FaGraduationCap } from "react-icons/fa";
 import toolboxImg from "@/public/toolbox.png";
 import tailwindIcon from '@/public/icons/tailwind.svg'
 import knightImg from '@/public/knight.png'
+import battleshipImg from '@/public/battleship.jpeg'
 import nextIcon from '@/public/icons/next.svg'
 import framerIcon from '@/public/icons/framer.svg'
 import { BsFillKanbanFill } from "react-icons/bs";
+import { BattleshipCard, KnightCard, ToolboxCard } from "@/components/Card";
 
 export const links = [
   {
@@ -77,6 +79,9 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "ToolBox",
+    id: "toolbox",
+    gradient: 'from-[#f7f0ff] to-[#a78afe]',
+    card: ToolboxCard,
     description:
       "ToolBox is an open-source Next.js full-stack application designed to serve as a comprehensive database of the most useful tools available on the internet.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind"],
@@ -86,12 +91,27 @@ export const projectsData = [
   },
   {
     title: "Knight Travails",
+    id: "knight-travails",
+    gradient: 'from-[#f7f0ff] to-[#d3f3f1]',
+    card: KnightCard,
     description:
       `A solution to a "knight travails" problem - i.e. find the shortest path a knight can take to move between two positions on a chessboard. Implemented using a graph BFS search. I know, nothing fancy but I'm really proud of this one.`,
     tags: ["JavaScript"],
     imageUrl: knightImg,
     website: '',
     repoUrl:"https://github.com/sofiabaezzato/knight-travails",
+  },
+  {
+    title: "Battleship",
+    id: "battleship",
+    gradient: 'from-[#f7f0ff] to-[#f5e6ad]',
+    card: BattleshipCard,
+    description:
+      `I've implemented the logic for a Battleship game, primarily focusing on practicing the fundamentals of Test Driven Development. As an additional personal challenge, I used Typescript for the first time.`,
+    tags: ["TypeScript", "Jest"],
+    imageUrl: battleshipImg,
+    website: '',
+    repoUrl:"https://github.com/sofiabaezzato/battleship",
   },
 ] as const;
 

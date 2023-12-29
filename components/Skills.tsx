@@ -38,7 +38,7 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className='flex gap-2 bg-white/90 border border-gray-600 rounded-xl px-5 py-3 justify-center items-center'
+            className='flex gap-2 bg-white/90 border border-gray-600 rounded-full px-5 py-3 justify-center items-center'
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -46,6 +46,10 @@ const Skills = () => {
               once: true,
             }}
             custom={index}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.2 }
+            }}
           >
             {skill.name === "Tailwind" || skill.name === "Next.js" || skill.name === "Framer Motion" ? <Image src={skill.icon} alt='dev-icon' width={20} height={20} className='text-gray-600 '/> :
             <DevIcon icon={skill.icon} className='text-gray-600' width={20} height={20}/>}
